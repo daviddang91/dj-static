@@ -16,6 +16,7 @@ try:
     from django.core.handlers.wsgi import get_path_info
 except ImportError:  # django < 1.7
     try:
+	print "Hello word!!"
         from django.core.handlers.base import get_path_info
     except ImportError:     # django < 1.5
         import sys
